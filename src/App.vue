@@ -1,13 +1,16 @@
 <script setup>
 import HelloWorld from './components/HelloWorld.vue'
-import { ref } from "vue";
+import day1 from './components/day1.vue'
 
-const msg = ref('hi!');
-
-const handleClick = () => {
-  msg.value = 'world!';
-}
 </script>
+
+<template>
+  <day1/>
+</template>
+
+
+
+
 
 <!-- <template>
   <div>
@@ -36,8 +39,3 @@ const handleClick = () => {
 }
 </style> -->
 
-<template>
-  <section class="container">
-    <h1 @click="handleClick">{{ msg }}</h1>
-  </section>
-</template>
